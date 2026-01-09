@@ -5,15 +5,15 @@
   <title>Diego Hoelz | Arquiteto de Soluções Azure</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portfólio profissional de Diego Hoelz, Arquiteto de Soluções com foco em Azure, integrações, APIs e arquitetura corporativa." />
+  <meta name="description" content="Portfólio profissional de Diego Hoelz, Arquiteto de Soluções com mais de 15 anos de experiência, focado em Azure, integrações via API e soluções corporativas." />
 
   <style>
     :root {
-      --bg: #0b1120;
-      --card: #020617;
-      --primary: #3b82f6;
-      --secondary: #60a5fa;
-      --text: #e5e7eb;
+      --bg: #0a0f24;
+      --card: #08102a;
+      --primary: #2065d1;
+      --accent: #60a5fa;
+      --text: #e4e7eb;
       --muted: #94a3b8;
     }
 
@@ -28,97 +28,64 @@
     body {
       background: var(--bg);
       color: var(--text);
-      line-height: 1.8;
+      line-height: 1.7;
     }
 
-    /* HERO */
     header {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      background: linear-gradient(135deg, #2563eb, #0a0f24);
+      padding: 90px 20px;
       text-align: center;
-      padding: 40px 20px;
-      background: radial-gradient(circle at top, #1e40af, #020617 60%);
-      animation: fadeIn 1.2s ease forwards;
+      opacity: 0;
+      animation: fadeIn 1s ease-out forwards;
     }
-
     header h1 {
-      font-size: 3.5rem;
-      margin-bottom: 15px;
-      animation: slideUp 1s ease forwards;
+      font-size: 3.6rem;
+      margin-bottom: 12px;
     }
-
     header h2 {
-      font-size: 1.4rem;
-      font-weight: normal;
-      color: var(--secondary);
-      animation: slideUp 1.2s ease forwards;
+      font-size: 1.5rem;
+      color: var(--accent);
+      margin-bottom: 18px;
+      font-weight: 400;
     }
-
     header p {
-      margin-top: 25px;
       max-width: 700px;
-      margin-left: auto;
-      margin-right: auto;
-      color: var(--muted);
-      animation: slideUp 1.4s ease forwards;
+      margin: auto;
+      opacity: 0.95;
     }
 
-    .cta {
-      margin-top: 40px;
-      animation: slideUp 1.6s ease forwards;
-    }
-
-    .btn {
-      background: var(--primary);
-      color: white;
-      padding: 16px 32px;
-      border-radius: 12px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
-
-    .btn:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 15px 40px rgba(59,130,246,0.4);
-    }
-
-    /* NAV */
     nav {
       position: sticky;
       top: 0;
       z-index: 100;
       background: rgba(2,6,23,0.9);
       backdrop-filter: blur(10px);
+      padding: 18px;
       text-align: center;
-      padding: 15px;
     }
-
     nav a {
       margin: 0 18px;
       text-decoration: none;
-      color: var(--secondary);
-      font-weight: 600;
+      color: var(--accent);
+      font-weight: bold;
+      font-size: 0.95rem;
+      transition: 0.3s;
     }
-
     nav a:hover {
       color: white;
     }
 
-    /* SECTIONS */
     section {
       max-width: 1100px;
       margin: auto;
-      padding: 100px 20px;
+      padding: 90px 20px;
+      opacity: 0;
       animation: fadeIn 1s ease forwards;
     }
-
     section h3 {
       font-size: 2.4rem;
-      margin-bottom: 40px;
-      color: var(--secondary);
+      margin-bottom: 32px;
+      color: var(--accent);
       text-align: center;
     }
 
@@ -126,59 +93,61 @@
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 30px;
+      margin-top: 30px;
     }
 
     .card {
       background: var(--card);
-      padding: 30px;
-      border-radius: 16px;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+      padding: 28px;
+      border-radius: 14px;
+      box-shadow: 0 18px 40px rgba(0,0,0,0.6);
       transition: transform 0.4s, box-shadow 0.4s;
     }
-
     .card:hover {
       transform: translateY(-8px);
-      box-shadow: 0 30px 60px rgba(0,0,0,0.7);
+      box-shadow: 0 28px 60px rgba(0,0,0,0.7);
     }
-
     .card h4 {
-      margin-bottom: 15px;
+      margin-bottom: 12px;
       color: var(--primary);
+      font-size: 1.3rem;
     }
-
-    .card p, .card li {
+    .card p,
+    .card li {
       color: var(--muted);
-      font-size: 0.95rem;
+      font-size: 0.96rem;
     }
-
     ul {
       padding-left: 20px;
+      margin-top: 12px;
     }
 
-    /* FOOTER */
+    .btn {
+      background: var(--primary);
+      color: white;
+      padding: 14px 28px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 20px;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background: #174ab0;
+    }
+
     footer {
       text-align: center;
-      padding: 50px 20px;
+      padding: 45px 20px;
       background: #020617;
       color: var(--muted);
-      font-size: 0.9rem;
+      font-size: 0.87rem;
     }
 
-    /* ANIMATIONS */
     @keyframes fadeIn {
       from { opacity: 0; }
       to { opacity: 1; }
-    }
-
-    @keyframes slideUp {
-      from {
-        opacity: 0;
-        transform: translateY(30px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
     }
   </style>
 </head>
@@ -186,122 +155,112 @@
 <body>
 
 <header>
-  <div>
-    <h1>Diego Hoelz</h1>
-    <h2>Arquiteto de Soluções • Azure • Integrações • APIs</h2>
-
-    <p>
-      Especialista em desenhar arquiteturas corporativas modernas,
-      conectando estratégia de negócio, cloud e integrações em ambientes
-      críticos e de alta complexidade.
-    </p>
-
-    <div class="cta">
-      <a class="btn" href="#impacto">Ver meu portfólio</a>
-    </div>
-  </div>
+  <h1>Diego Hoelz</h1>
+  <h2>Arquiteto de Soluções • Azure • APIs • Integrações • Impacto Corporativo</h2>
+  <p>
+    Arquiteto de Soluções com mais de 15 anos de experiência transformando
+    desafios de negócios em soluções tecnológicas eficientes, com foco
+    no ecossistema Azure, integrações corporativas e governança arquitetural. :contentReference[oaicite:2]{index=2}
+  </p>
+  <a class="btn" href="#conquistas">Conquistas e Impacto</a>
 </header>
 
 <nav>
-  <a href="#impacto">Impacto</a>
+  <a href="#conquistas">Conquistas</a>
   <a href="#especialidades">Especialidades</a>
-  <a href="#atuacao">Atuação</a>
+  <a href="#experiencias">Experiências</a>
   <a href="#contato">Contato</a>
 </nav>
 
-<section id="impacto">
-  <h3>Impacto Profissional</h3>
+<section id="conquistas">
+  <h3>Conquistas e Impacto</h3>
 
   <div class="grid">
     <div class="card">
-      <h4>Arquitetura Corporativa</h4>
+      <h4>Transformação Corporativa</h4>
       <p>
-        Atuação em ambientes corporativos de grande porte,
-        apoiando decisões estratégicas e garantindo alinhamento
-        entre tecnologia e negócio.
+        Liderança arquitetural em projetos de integração entre sistemas corporativos,
+        com uso avançado de APIs, mensageria e eventos para promover eficiência
+        e redução de acoplamento entre serviços.
       </p>
     </div>
 
     <div class="card">
-      <h4>Integrações e APIs</h4>
+      <h4>Escalabilidade em Cloud</h4>
       <p>
-        Desenho de soluções com APIs síncronas e assíncronas,
-        mensageria e arquiteturas orientadas a eventos.
+        Criação de soluções escaláveis baseadas em Azure, garantindo alta disponibilidade,
+        segurança, governança e observabilidade para ambientes críticos.
       </p>
     </div>
 
     <div class="card">
-      <h4>Cloud Azure</h4>
+      <h4>Decisões Arquiteturais Estratégicas</h4>
       <p>
-        Forte experiência no ecossistema Azure,
-        com foco em escalabilidade, segurança,
-        observabilidade e governança.
+        Atuação como facilitador de decisões arquiteturais (ADR), alinhando
+        padrões técnicos com objetivos estratégicos de negócio.
       </p>
     </div>
   </div>
 </section>
 
 <section id="especialidades">
-  <h3>Especialidades</h3>
+  <h3>Especialidades Técnicas</h3>
 
   <div class="grid">
     <div class="card">
       <ul>
         <li>Arquitetura de Soluções em Microsoft Azure</li>
-        <li>Azure API Management</li>
-        <li>Integrações com parceiros externos</li>
-        <li>Arquitetura orientada a eventos</li>
-        <li>Mensageria e filas</li>
-        <li>Governança de arquitetura (ADR)</li>
+        <li>Azure API Management (APIM)</li>
+        <li>Arquiteturas orientadas a eventos</li>
+        <li>Mensageria e integração corporativa</li>
+        <li>Governança arquitetural (ADR)</li>
       </ul>
     </div>
 
     <div class="card">
       <p>
-        Minha atuação vai além da tecnologia.
-        Participo ativamente da definição de padrões,
-        boas práticas e direcionamento arquitetural
-        para soluções sustentáveis no longo prazo.
+        Foco em transformar requisitos de negócio em soluções técnicas claras,
+        resilientes e sustentáveis, com atenção a boas práticas de design
+        e princípios corporativos de software.
       </p>
     </div>
   </div>
 </section>
 
-<section id="atuacao">
-  <h3>Como eu atuo</h3>
+<section id="experiencias">
+  <h3>Experiências Relevantes</h3>
 
   <div class="card">
+    <h4>Arquiteto de Soluções & Gerente de Projetos</h4>
     <p>
-      Trabalho próximo aos times de negócio, desenvolvimento
-      e infraestrutura, traduzindo necessidades estratégicas
-      em soluções técnicas claras, seguras e escaláveis.
+      Mais de 15 anos de atuação em tecnologia, liderando iniciativas técnicas
+      complexas, desenho de arquiteturas corporativas e governança de
+      soluções em ambientes críticos. :contentReference[oaicite:3]{index=3}
     </p>
     <p>
-      Tenho experiência em ambientes regulados,
-      integrações complexas e soluções críticas para o negócio.
+      Experiência consolidada em projetos que exigem integração profunda entre
+      sistemas, interoperabilidade e adoção de padrões corporativos.
     </p>
   </div>
 </section>
 
 <section id="contato">
-  <h3>Vamos conversar</h3>
+  <h3>Contato & Perfil Profissional</h3>
 
-  <div class="card" style="text-align:center">
+  <div class="card" style="text-align: center;">
     <p>
-      Veja minha trajetória completa, recomendações
-      e experiências profissionais no LinkedIn.
+      Para conhecer a trajetória completa, recomendações e redes de
+      relacionamento profissional:
     </p>
 
-    <br />
-
     <a class="btn" href="https://www.linkedin.com/in/diego-hoelz-06b33426/" target="_blank">
-      Acessar LinkedIn
+      Acessar meu LinkedIn
     </a>
   </div>
 </section>
 
 <footer>
-  © 2026 – Diego Hoelz • Portfólio profissional • GitHub Pages
+  © 2026 – Diego Hoelz • Portfolio Profissional
 </footer>
 
 </body>
