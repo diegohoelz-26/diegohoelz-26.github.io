@@ -1,51 +1,170 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="utf-8" />
-  <title>Diego Hoelz | Arquiteto de Soluções Azure</title>
-  <link href="css/styles.css" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <title>Diego Hoelz | Arquiteto de Soluções</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS INLINE -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background-color: #0f172a;
+      color: #e5e7eb;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #2563eb, #1e40af);
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+
+    nav {
+      background-color: #020617;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #93c5fd;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #ffffff;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #60a5fa;
+    }
+
+    .card {
+      background-color: #020617;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    }
+
+    footer {
+      background-color: #020617;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 40px;
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
+
+    button {
+      background-color: #2563eb;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+      margin-top: 15px;
+    }
+
+    button:hover {
+      background-color: #1e40af;
+    }
+  </style>
 </head>
-<body id="page-top">
 
-<nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top">
-  <div class="container">
-    <a class="navbar-brand" href="index.html">Diego Hoelz</a>
-    <ul class="navbar-nav ms-auto">
-      <li><a class="nav-link" href="index.html">Home</a></li>
-      <li><a class="nav-link" href="sobre.html">Sobre</a></li>
-      <li><a class="nav-link" href="arquitetura-azure.html">Azure</a></li>
-      <li><a class="nav-link" href="integracoes.html">Integrações</a></li>
-      <li><a class="nav-link" href="artigos.html">Artigos</a></li>
-      <li><a class="nav-link" href="contato.html">Contato</a></li>
-    </ul>
-  </div>
-</nav>
+<body>
 
-<header class="masthead bg-primary text-white text-center">
-  <div class="container">
-    <h1 class="masthead-heading">Diego Hoelz</h1>
-    <p class="masthead-subheading">
-      Arquiteto de Soluções | Especialista em Azure
-    </p>
-    <p class="mt-4">
-      Arquitetura de soluções modernas, escaláveis e orientadas a eventos,
-      com foco em integrações via APIs, mensageria e cloud Microsoft Azure.
-    </p>
-  </div>
-</header>
+  <header>
+    <h1>Diego Hoelz</h1>
+    <p>Arquiteto de Soluções | Azure | APIs | Integrações</p>
+  </header>
 
-<section class="page-section">
-  <div class="container text-center">
-    <h2>Especialidades</h2>
-    <ul>
-      <li>Arquitetura de Soluções em Azure</li>
-      <li>Azure API Management (APIM)</li>
-      <li>Integrações síncronas e assíncronas</li>
-      <li>Mensageria e Event-Driven Architecture</li>
-      <li>Governança e ADR</li>
-    </ul>
-  </div>
-</section>
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#experiencia">Experiência</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <section id="sobre">
+    <h2>Sobre mim</h2>
+    <div class="card">
+      <p>
+        Sou Arquiteto de Soluções com forte atuação em Azure, integrações via API,
+        mensageria, eventos e governança de arquitetura. Atuo na construção de
+        soluções escaláveis, resilientes e alinhadas ao negócio.
+      </p>
+    </div>
+  </section>
+
+  <section id="experiencia">
+    <h2>Experiência</h2>
+
+    <div class="card">
+      <h3>Arquiteto de Soluções – Seguros & Previdência</h3>
+      <p>
+        Projetando arquiteturas modernas utilizando Azure API Management,
+        mensageria, eventos e integrações com parceiros externos.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Especialidades</h3>
+      <ul>
+        <li>Azure Architecture</li>
+        <li>APIs síncronas e assíncronas</li>
+        <li>Mensageria e Event Driven</li>
+        <li>Governança e ADR</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contato">
+    <h2>Contato</h2>
+    <div class="card">
+      <p>📧 Email: seuemail@email.com</p>
+      <p>🔗 LinkedIn: <a href="https://www.linkedin.com" target="_blank" style="color:#93c5fd;">Acessar perfil</a></p>
+
+      <button onclick="mostrarMensagem()">Fale comigo</button>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 - Diego Hoelz • Site hospedado no GitHub Pages
+  </footer>
+
+  <!-- JS INLINE -->
+  <script>
+    function mostrarMensagem() {
+      alert("Obrigado pelo contato! 🚀");
+    }
+  </script>
 
 </body>
 </html>
